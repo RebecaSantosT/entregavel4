@@ -1,0 +1,20 @@
+<script>
+
+var quantidadeFibonacci = prompt ('Informe a quantidade de números da sequência de Fibonacci');
+
+var i = 0;
+var n1 = 0;
+var n2 = 1;
+var n3 = 0;
+var cont = 0;
+    while (i < quantidadeFibonacci){
+        n3 = n1 + n2;
+        n1 = n2;
+        n2 = n3;
+        i = i + 1;
+        cont = cont + 1;
+    }
+document.write('O número ' + cont + ' da sequência de Fibonacci é: ' + n3);
+
+
+</script>
